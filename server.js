@@ -5,7 +5,7 @@ const path = require('path');
 const alumnoRoutes = require('./routes/alumnoRoutes');
 const userRoutes = require('./routes/userRoutes');
 const session = require('express-session');
-const novedadRouter = require('./routes/novedadRouter');  //Agregado novedades
+
 
 
 
@@ -29,7 +29,7 @@ app.use(session({
 app.use('/api/alumnos', alumnoRoutes);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api/users', userRoutes);
-app.use('/api/novedades', novedadRouter); //Agregado Novedades
+
 
 
 // Conexión a la base de datos
